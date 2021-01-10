@@ -1,0 +1,26 @@
+<div class="container">
+    <div>
+    <h2>Ajouter une Camera :</h2>
+    </div>
+    <form >
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >ID Camera</label>
+        <input type="text" [(ngModel)]="newCamera.idCamera" name="idCamera " class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Nom Camera</label>
+        <input type="text"[(ngModel)]= "newCamera.nomCamera"  name="nomCamera" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >Prix Camera</label>
+        <input type="number" [(ngModel)]= "newCamera.prixCamera" name="prixCamera" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date création</label>
+        <input type="date" [(ngModel)]= "newCamera.dateCreation" name="dateCreation" class="form-control">
+        </div>
+        <div class="mt-2">
+        <button type="submit" (click)="addCamera()" class="btn btnsuccess">Ajouter</button>
+        </div>
+        </form>
+        </div>
